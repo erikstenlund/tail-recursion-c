@@ -67,7 +67,7 @@
 		case 1: \
 			__asm__("mov %[arg], %%rdi": : [arg] "m" (arg_1)); \
 		default: \
-			break; /* Unreachable */ \
+			break; \
 	} \
 }
 /* This is assuming argc < 7, System V AMD64 ABI
